@@ -109,7 +109,8 @@ def contribution(path_data):
                 
                 # ***
                 # state contributions are composed from individual atomic states
-                # find up to which numbered atomic state corresponds to the first material
+                # find up to which numbered atomic state (numbered in the projwfc.x output file) 
+                # corresponds to the first material
                 # in order to properly sum up contribution from said material
                 if comp_state < 241:
                     comp_sum = comp_sum + comp
