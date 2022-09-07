@@ -9,7 +9,7 @@ Check out the resulting paper: [Improved Charge Transfer and Barrier Lowering ac
 
 Bandstructure plots can tell us a lot about materials; however, they can be very difficult to understand when the cell is consists of multiple materials interfaced togethor like in a heterostructure supercell. `band_plot_contribution_2_materials.py` and `band_plot_contribution_3_materials.py` get around the spaghetti mess of these kind of bandstructures by assigning a colored weight to each state in order to distinguish its composition as a function of contribution from the indivudual materials. They are used for 2 and 3 material heterostructures, respectively.
 
-`band_plot_contribution_2_materials.py` and `band_plot_contribution_3_materials.py` require `pw.x` input and output files for 'scf' calculations. As well, you will need to provide the file containing the projected bandstructure states. You can use Quantum ESPRESSO's `projwfc.x` to get the states projected onto localized atomic orbitals (`pdos.out` in the input_file_examples folder). 
+`band_plot_contribution_2_materials.py` and `band_plot_contribution_3_materials.py` require `pw.x` input and output files for `scf` calculations. As well, you will need to provide the file containing the projected bandstructure states. You can use Quantum ESPRESSO's `projwfc.x` to get the states projected onto localized atomic orbitals (`pdos.out` in the input_file_examples folder). 
 
 ## Potential Energy Curves
 
