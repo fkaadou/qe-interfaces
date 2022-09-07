@@ -13,4 +13,9 @@ Bandstructure plots can tell us a lot about materials; however, they can be very
 
 ## Potential Energy Curves
 
+Constructing a supercell with two different materials is not a trivial matter. When interfacing two surfaces, it is important that the resulting contact corresponds to a minimum on the potential energy or sliding enegy curve. In order to insure that is the case, one must calculate this potential energy curve by constructing many cells where the position of the top material is translated relative to the bottom material in incremental amounts and then finding the optimized geometry or 'relaxing' the cell. Once all the different cell configuration are optimized, their total energy is extracted and plotted as a function of the translation distance to produce the potential energy curve.
+
+The potential_energy_curve folder contains a set of useful scripts to be run on a compute canada cluster for automatically creating and submitting geometry relaxation calculations to the scheduler given a starting configuration. Due to symmetry considerations, it is only necessary to perform these translations along the diagonals of the cell. Since the cells I was dealing with were hexagonal, I had to create potential energy curves along both the long diagonal (`pec_long_diagonal.py`) and short diagonal (`pec_short_diagonal.py`). These can easily be modified to work with any other cell.
+
+
 ## Other
