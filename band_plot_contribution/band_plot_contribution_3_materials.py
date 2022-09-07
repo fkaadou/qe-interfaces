@@ -101,9 +101,9 @@ for i, psi in enumerate(all_wfc):
             comp = 1e-3*float(re.search('\d{3,}',x).group())
             
             # ***
-            # state contributions are composed from individual atomic states
-            # find up to which numbered atomic state corresponds to the first material
-            # in order to properly sum up contribution from said material
+            # state contributions are composed from individual atomic states (numbered in the projwfc.x output file) 
+            # find which numbered atomic state corresponds to the first, second and third material
+            # in order to properly sum up contribution
             if comp_state < 865:
                 comp_metal = comp + comp_metal
             elif comp_state > 865 and comp_state < 1045:
