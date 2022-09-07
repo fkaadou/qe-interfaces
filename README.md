@@ -7,7 +7,7 @@ Check out the resulting paper: [Improved Charge Transfer and Barrier Lowering ac
 
 ## Bandstructure Plots with Atomic Contributions
 
-
+Bandstructure plots can tell us a lot about materials; however, they can be very difficult to understand when the cell is consists of multiple materials interfaced togethor like in a heterostructure supercell. `band_plot_contribution_2_materials.py` and `band_plot_contribution_2_materials.py` get around the spaghetti mess of these kind of bandstructures by assigning a colored weight to each state in order to distinguish its composition as a function of contribution from the indivudual materials. They are used for 2 and 3 material heterostructures, respectively.
 
 ## Potential Energy Curves
 
