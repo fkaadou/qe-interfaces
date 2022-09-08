@@ -19,4 +19,6 @@ The potential_energy_curve folder contains a set of useful scripts to be run on 
 
 The folder also contains scripts to automate resubmition of failed or expired jobs on the cluster (`resub.py`) and a scraper to extract the final energies (`scrape.py`).
 
-## Other
+## Potential Across an Interface
+
+Another very useful measurement when characterizing the type of contact between two materials is the potential energy relative to the Fermi level at the the interface. Once you've calculated the optimized geometry of your cell, Quantum ESPRESSO allows you to easily calculate several different potentials across the cell with its post-processing tool `pp.x`. However, this returns 3D potentials V(x,y,x) which can be cumbersome to investigate. However, averageing V(x,y,z) in the direction perpendicular to the atomic layers (z-direction) and plotting it along said direction provides useful insight to the nature of the interface contact. This is precisely the purpose of `cube_average_plot.py`.
